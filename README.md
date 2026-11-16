@@ -1,10 +1,12 @@
 # my-portfolio-site
 
-**Name:** [OLABALADE EMMANUEL]
-**Matric Number:** [23120111046]
+**Name:** OLABALADE EMMANUEL
+
+**Matric Number:** 23120111046
+
 **Course:** CSC 419 – Advances in Web, Mobile and Blockchain Development
 
-**Live site:** [https://olabalade-emmanuel-portfolio.onrender.com]
+**Live site:** https://olabalade-emmanuel-portfolio.onrender.com
 
 ## About
 
