@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Olabalade Emmanuel | Portfolio</title>
+  <meta name="description" content="Portfolio of Olabalade Emmanuel, a full-stack developer.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style type="text/tailwindcss">
+    @theme {
+      --color-paper: #101010;      
+      --color-ink:  	#fffefe;     
+      --color-muted: #A3A3A3;      
+      --color-grey: #E4E1DA;       
+      --color-accent:  	#fc0000;   
+      --color-accent-light: #660000;
+
+      --font-head: "Cinzel", sans-serif;
+      --font-body: "Cinzel", sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-paper text-ink font-body text-[17px] leading-relaxed">
+
+  <!-- ===== Top bar ===== -->
+  <header class="sticky top-0 z-10 bg-paper border-b-2 border-ink">
+    <nav class="max-w-[1120px] mx-auto px-5 md:px-8 py-4 flex flex-wrap items-center justify-between">
+      <a href="index.html" class="font-head font-bold text-[22px] no-underline">OLABALADE</a>
+
+      <button id="menu-btn" class="md:hidden w-11 h-11 border-2 border-ink flex flex-col items-center justify-center gap-[5px] cursor-pointer"
+              aria-label="Open menu" aria-expanded="false" aria-controls="nav-links">
+        <span class="w-5 h-0.5 bg-ink"></span>
+        <span class="w-5 h-0.5 bg-ink"></span>
+        <span class="w-5 h-0.5 bg-ink"></span>
+      </button>
+
+      <ul id="nav-links" class="hidden md:flex w-full md:w-auto flex-col md:flex-row items-start md:items-center gap-4 md:gap-7 pt-4 md:pt-0 font-medium">
+        <li><a href="#about" class="hover:text-accent">About</a></li>
+        <li><a href="#projects" class="hover:text-accent">Projects</a></li>
+        <li>
+          <a href="#contact" class="inline-flex items-center min-h-11 px-5 bg-ink text-paper font-semibold hover:-translate-y-0.5 transition-transform">Contact</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ===== 01 About me ===== -->
+    <section id="about" class="max-w-[1120px] mx-auto px-5 md:px-8 pt-12 pb-14 md:pt-24 md:pb-22 flex flex-wrap items-center gap-8 md:gap-14">
+      <div class="flex-[999_1_480px] flex flex-col gap-5">
+        <p class="font-head font-medium text-accent">01 / About me</p>
+        <h1 class="font-head font-bold text-4xl md:text-6xl leading-[1.05] tracking-tight">
+          Hi, my name is Olabalade.<br>I'm a passionate programmer.
+        </h1>
+        <p class="text-muted max-w-[600px]">
+          I'm mostly a full-stack developer. I build websites and web apps for people who need them.
+          When I'm not building websites, I take on programming challenges, write small games
+          and build systems programming projects. Right now I'm interested in AI research.
+        </p>
+
+        <h3 class="font-head font-bold text-xl mt-2">Languages I work with</h3>
+        <ul class="flex flex-wrap gap-2.5">
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-html5-plain"></i><i class="devicon-css3-plain"></i> HTML &amp; CSS
+          </li>
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-javascript-plain"></i><i class="devicon-typescript-plain"></i> JavaScript &amp; TypeScript
+          </li>
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-python-plain"></i> Python
+          </li>
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-cplusplus-plain"></i> C++
+          </li>
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-go-original-wordmark"></i> Go
+          </li>
+          <li class="border-2 border-ink px-3 py-1 text-sm font-medium flex items-center gap-1.5">
+            <i class="devicon-rust-original"></i> Rust
+          </li>
+        </ul>
+      </div>
+
+      <!-- 
+      <img src="images/me.jpg" alt="Photo of Olabalade Emmanuel"
+           class="flex-[1_1_260px] w-full md:max-w-[340px] aspect-[4/5] object-cover border-2 border-ink">
+      -->
+    </section>
+
+    <!-- ===== 02 Projects ===== -->
+    <section id="projects" class="border-t-2 border-ink">
+      <div class="max-w-[1120px] mx-auto px-5 md:px-8 py-14 md:py-22 flex flex-col gap-4">
+        <p class="font-head font-medium text-accent">02 / Projects</p>
+        <h2 class="font-head font-bold text-3xl md:text-[44px] leading-tight">Projects I've built</h2>
+
+        <div class="grid grid-cols-[repeat(auto-fit,minmax(280px,1fr))] gap-7 mt-6">
+
+          <!-- Project 1 -->
+          <article class="border-2 border-ink bg-white flex flex-col transition hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_#161616]">
+            <img class="w-full h-[200px] object-cover bg-grey border-b-2 border-ink" src="images/co-tasks.png" alt="Screenshot of the Collaborative TodoApp">
+            <div class="p-5.5 flex flex-col gap-3 grow">
+              <h3 class="font-head font-bold text-[22px]">A Collaborative TodoApp</h3>
+              <p class="text-muted text-[15px]">A to-do list web app that teams can use to manage their work together.</p>
+              <p class="text-[13px] font-semibold tracking-wider uppercase text-[#4A4A4A]">TypeScript · Go · PostgreSQL</p>
+              <div class="mt-auto pt-1.5 flex flex-wrap gap-4.5 font-semibold text-[15px]">
+                <a href="project.html" class="underline hover:text-accent">Read more →</a>
+                <a href="https://github.com/OLABALADE/todoApp" target="_blank" rel="noopener" class="underline hover:text-accent">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2 -->
+          <article class="border-2 border-ink bg-white flex flex-col transition hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_#161616]">
+            <img class="w-full h-[200px] object-cover bg-grey border-b-2 border-ink" src="images/tic_tac_toe.png" alt="Screenshot of the Tic Tac Toe game">
+            <div class="p-5.5 flex flex-col gap-3 grow">
+              <h3 class="font-head font-bold text-[22px]">Tic Tac Toe</h3>
+              <p class="text-muted text-[15px]">A simple tic tac toe game with a smart AI opponent.</p>
+              <p class="text-[13px] font-semibold tracking-wider uppercase text-[#4A4A4A]">Python</p>
+              <div class="mt-auto pt-1.5 flex flex-wrap gap-4.5 font-semibold text-[15px]">
+                <a href="https://github.com/OLABALADE/Tic_Tac_Toe" target="_blank" rel="noopener" class="underline hover:text-accent">Code</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3 -->
+          <article class="border-2 border-ink bg-white flex flex-col transition hover:-translate-x-1 hover:-translate-y-1 hover:shadow-[4px_4px_0_#161616]">
+            <img class="w-full h-[200px] object-cover bg-grey border-b-2 border-ink" src="images/conway_game_life.png" alt="Screenshot of Conway's Game of Life">
+            <div class="p-5.5 flex flex-col gap-3 grow">
+              <h3 class="font-head font-bold text-[22px]">Conway's Game of Life</h3>
+              <p class="text-muted text-[15px]">A simple implementation of Conway's Game of Life.</p>
+              <p class="text-[13px] font-semibold tracking-wider uppercase text-[#4A4A4A]">Python</p>
+              <div class="mt-auto pt-1.5 flex flex-wrap gap-4.5 font-semibold text-[15px]">
+                <a href="https://github.com/OLABALADE/conway_game_of_life" target="_blank" rel="noopener" class="underline hover:text-accent">Code</a>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ===== 03 Contact (Call to action) ===== -->
+    <section id="contact" class="bg-ink text-paper">
+      <div class="max-w-[1120px] mx-auto px-5 md:px-8 py-14 md:py-24 flex flex-col gap-4">
+        <p class="font-head font-medium text-accent-light">03 / Contact</p>
+        <h2 class="font-head font-bold text-3xl md:text-[52px] leading-tight max-w-[760px]">Have a project in mind? Let's talk.</h2>
+        <div class="flex flex-col sm:flex-row flex-wrap gap-3.5 mt-2">
+          <a href="mailto:olabaladeemmanuel@gmail.com"
+             class="inline-flex items-center justify-center min-h-11 px-6 py-3 bg-accent text-white font-semibold hover:-translate-y-0.5 transition-transform">Email me</a>
+          <a href="https://wa.me/2349161382427" target="_blank" rel="noopener"
+             class="inline-flex items-center justify-center min-h-11 px-6 py-3 border-2 border-paper text-paper font-semibold hover:-translate-y-0.5 transition-transform">Chat on WhatsApp</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===== Footer ===== -->
+  <footer class="border-t-2 border-ink">
+    <div class="max-w-[1120px] mx-auto px-5 md:px-8 py-7 flex flex-wrap justify-between gap-4 text-[15px] text-muted">
+      <p>© <span id="year"></span> Olabalade Emmanuel</p>
+      <ul class="flex gap-5.5">
+        <li><a href="https://github.com/OLABALADE" target="_blank" rel="noopener" class="underline hover:text-accent">GitHub</a></li>
+        <li><a href="https://linkedin.com/" target="_blank" rel="noopener" class="underline hover:text-accent">LinkedIn</a></li>
+      </ul>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
